@@ -38,8 +38,11 @@ Playwright; no copied assets.
 mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`POST.json` names the X post's address. Until the post is live it holds a placeholder
-that `main.ts` refuses — replace it with the real post URL before submitting.
+`POST.json` names the X post's address. The post is live at
+https://x.com/RahmadAzhari17/status/2125097984274948454, and that is the URL
+`POST.json` carries. Before the post went up it held a placeholder instead,
+which `main.ts` refuses — the program only copies a real
+`https://x.com/<handle>/status/<id>` address, never a placeholder.
 
 ## License
 
